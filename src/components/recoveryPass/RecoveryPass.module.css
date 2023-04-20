@@ -1,0 +1,78 @@
+.container {
+  width: 1920px;
+  margin: auto;
+}
+
+.logo_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 40px 22px;
+}
+
+.registration {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #64748b;
+  margin: 17px 22.5px 12px;
+}
+
+.platform_name {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+}
+.form {
+  /* display: flex; */
+  width: 336px;
+  margin: 383px auto;
+}
+.title {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.recovery_text {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  margin-bottom: 24px;
+}
+.authorisation_form {
+  display: flex;
+  flex-direction: column;
+}
+.form_input,
+.button {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 322px;
+  height: 46px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.form_input {
+  padding-left: 12px;
+}
+.button {
+  width: 336px;
+  height: 48px;
+  background-color: #4b5563;
+  color: #ffffff;
+}
+.form_input::placeholder {
+  color: #64748b;
+}
