@@ -1,0 +1,125 @@
+.container {
+  width: 1920px;
+  margin: auto;
+}
+
+.logo_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 40px 22px;
+}
+
+.authorisation {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #3b82f6;
+  margin: 17px 22.5px 12px;
+}
+
+.platform_name {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.main_block {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.title {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.form {
+  margin: 0px auto;
+  text-align: start;
+}
+.authorisation_form {
+  display: block;
+  margin-top: 300px;
+}
+.dropdown_label {
+  font-family: 'inter-regular';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #64748B;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.dropdown input {
+  width: 288px;
+  height: 48px;
+}
+.form_input,
+.button {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 336px;
+  height: 46px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+.button {
+  width: 336px;
+  height: 48px;
+  background-color: #4b5563;
+  color: #ffffff;
+}
+.form_input::placeholder {
+  padding-left: 12px;
+}
+.password_block {
+  display: flex;
+  flex-direction: column;
+}
+.eye {
+  display: none;
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+.link {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+}
+.recovery_text {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  width: 336px;
+  margin-bottom: 24px;
+  color: #64748B;
+}
+.text_link {
+  font-weight: 600;
+  color: #1E293B;
+  text-decoration: none;
+}
+
