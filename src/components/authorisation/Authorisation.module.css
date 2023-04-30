@@ -1,6 +1,6 @@
 .container {
-    width: 1920px;
-    margin: auto;
+  width: 1920px;
+  margin: auto;
 }
 
 .logo_block {
@@ -36,36 +36,51 @@
   text-align: start;
 }
 .authorisation_form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-top: 300px;
+}
+.authorisation_form label {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+  margin-left: 12px;
 }
 .form_input,
 .button {
   font-family: "inter-regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  width: 298px;
-  height: 46px;
+  font-size: 14px;
+  width: 336px;
+  height: 48px;
   border: 1px solid #cbd5e1;
   border-radius: 4px;
-  color: #64748b;
+  color: #1e293b;
   margin-bottom: 16px;
 }
+.form_input_error {
+  border-color: red;
+}
 .button {
-  width: 300px;
+  width: 336px;
   height: 48px;
   background-color: #4b5563;
   color: #ffffff;
 }
-.form_input::placeholder {
+.button:disabled {
+  background-color: white;
+}
+.form_input {
   padding-left: 12px;
 }
 .eye {
-  display: none;
   position: relative;
-  right: 20px;
-  top: 5px;
+  right: 35px;
+  top: 3px;
 }
 .link {
   font-family: "inter-regular";
@@ -73,5 +88,25 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: #64748B;
+  color: #64748b;
+}
+.error {
+  position: relative;
+  bottom: 16px;
+  margin-left: 12px;
+  color: #000;
+  max-width: 400px;
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.message {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
 }
