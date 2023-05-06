@@ -49,6 +49,17 @@
   display: block;
   margin-top: 300px;
 }
+.authorisation_form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+  margin-left: 12px;
+}
 .dropdown_label {
   font-family: 'inter-regular';
 font-style: normal;
@@ -79,6 +90,9 @@ color: #64748B;
   color: #64748b;
   margin-bottom: 16px;
 }
+.form_input_error {
+  border-color: red;
+}
 .button {
   width: 336px;
   height: 48px;
@@ -88,15 +102,14 @@ color: #64748B;
 .form_input::placeholder {
   padding-left: 12px;
 }
-.password_block {
+/* .password_block {
   display: flex;
   flex-direction: column;
-}
+} */
 .eye {
-  display: none;
   position: relative;
-  right: 20px;
-  top: 5px;
+  right: 35px;
+  top: 3px;
 }
 .link {
   font-family: "inter-regular";
@@ -122,4 +135,25 @@ color: #64748B;
   color: #1E293B;
   text-decoration: none;
 }
+.error {
+  position: relative;
+  bottom: 16px;
+  margin-left: 12px;
+  color: #000;
+  max-width: 400px;
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.message {
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+}
+
 

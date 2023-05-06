@@ -7,11 +7,13 @@ import "primereact/resources/primereact.min.css"
 
 const UserChoice = () => {
   const [selectedUser, setSelectedUser] = useState(null)
+  console.log(selectedUser)
   const users = [
-    { name: "Ученик", code: "" },
-    { name: "Школа", code: "" },
+    { name: "Ученик", code: "St" },
+    { name: "Администратор", code: "SA" },
   ]
 
+  
   return (
     <>
       <div className={style.form}>
@@ -35,8 +37,8 @@ const UserChoice = () => {
           <option value="Ученик">Ученик</option>
           <option value="Школа">Школа</option>
         </select> */}
-          <Link to="createschool">
-            <button className={style.button}>Продолжить</button>
+          <Link to='createaccount' state={{ role: selectedUser && selectedUser.code }}>
+            <button className={style.button} disabled={!selectedUser}>Продолжить</button>
           </Link>
         </form>
       </div>

@@ -7,7 +7,6 @@ import eye from "./../../images/eye-slash.svg"
 import eyeOpen from "./../../images/eye-open.svg"
 import style from "./Authorisation.module.css"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 
 const URL = "http://127.0.0.1:8000/user/login/"
 
@@ -25,7 +24,8 @@ const Authorisation = () => {
   const [passType, setPassType] = useState({ eye: eye, type: "password" })
   const [message, setMessage] = useState("")
 
-  const registerHandler = async (values) => {
+  const authorisationHandler = async (values) => {
+    setPassType({ eye: eye, type: "password" })
     const payload = {
       email: values.email,
       password: values.password,
@@ -61,7 +61,7 @@ const Authorisation = () => {
               email: "",
               password: "",
             }}
-            onSubmit={registerHandler}
+            onSubmit={authorisationHandler}
           >
             {({ errors, touched }) => (
               <Form
