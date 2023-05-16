@@ -1,0 +1,42 @@
+.content {
+	display: flex;
+	margin-left: 325px;
+	padding-top: 105px;
+}
+
+
+.container {
+	width: 1920px;
+	margin: auto;
+}
+
+.logo_block {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 24px 40px 22px;
+	width: 1840px;
+}
+
+.platform_name {
+	font-family: "inter-regular";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+}
+
+.avatar {
+	display: grid;
+	width: 188px;
+	height: 40px;
+	grid-template-columns: 32px 120px 14px;
+	align-items: center;
+}
+
+.avatar__name {
+	margin-right: 7px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
