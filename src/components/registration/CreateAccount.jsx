@@ -28,8 +28,6 @@ const CreateAccount = () => {
   }
 
   function validateConfirmPass(password, value) {
-    console.log("password", password)
-    console.log("confirm", value)
     if (!value) return "Обязательно"
     if (password !== value) return "Пароли не совпадают"
   }
@@ -58,8 +56,12 @@ const CreateAccount = () => {
     try {
       const response = await axios.post(URL, data)
       console.log(response)
+      if (response.status === 201) {
+        setMessage('На указанный email отправлено письмо для подтверждения почты')
+      }
     } catch (error) {
-      setMessage(error.response.data.error)
+      console.log(error)
+      setMessage(`${error.response.data.email} ${error.response.data.username}`)
     }
   }
 
@@ -75,7 +77,7 @@ const CreateAccount = () => {
         onSubmit={registerHandler}
       >
         {({ values, errors, touched }) => (
-          <Form className={style.authorisation_form} onChange={() => {}}>
+          <Form className={style.authorisation_form} onChange={() => {setMessage('')}}>
             <h3 className={style.title}>Создать аккаунт</h3>
             <div className={style.password_block}>
               <label className={style.dropdown_label}>Логин</label>
@@ -153,6 +155,7 @@ const CreateAccount = () => {
             <button className={style.button} type="submit">
               Создать
             </button>
+            <div className={style.recovery_text}>{message}</div>
             <p className={style.recovery_text}>
               Создавая учетную запись, вы соглашаетесь с нашими{" "}
               <a href="#" className={style.text_link}>

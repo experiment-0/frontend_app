@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import axios from "axios"
 import { Formik, Form, Field } from "formik"
 import AuthorisationImage from "../../images/AuthorisationImage.png"
@@ -21,6 +21,8 @@ function validatePass(value) {
 }
 
 const Authorisation = () => {
+  const navigate = useNavigate()
+
   const [passType, setPassType] = useState({ eye: eye, type: "password" })
   const [message, setMessage] = useState("")
 
@@ -33,8 +35,9 @@ const Authorisation = () => {
     try {
       const response = await axios.post(URL, payload)
       if (response.status === 200) {
-        setMessage(`Пользователь ${response.data.email} вошел в систему`)
+        setMessage(`Пользователь ${response.data.username} вошел в систему`)
         console.log(response)
+        setTimeout(() => navigate('/mainpage/profile'), 2000)
       }
     } catch (error) {
       setMessage(error.response.data.error)

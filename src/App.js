@@ -5,6 +5,7 @@ import Registration from './components/registration/Registration'
 import RecoveryPass from './components/recoveryPass/RecoveryPass'
 import MainPage from './components/pages/MainPage/MainPage'
 import './App.css'
+import VerifyEmail from './components/registration/VerifyEmail'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Authorisation />} />
             <Route path="registration/*" element={<Registration />} />
             <Route path="recoverypass" element={<RecoveryPass />} />
+            <Route path="user/verify-email" element={<VerifyEmail />} />
           </Route>
           <Route path="mainpage/*" element={<MainPage />} />
         </Routes>

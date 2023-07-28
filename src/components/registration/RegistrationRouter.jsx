@@ -10,6 +10,7 @@ const RegistrationRouter = () => {
         <Route path="/" element={<UserChoice />} />
         <Route path="registrationchoice" element={<RegistrationChoice />} />
         <Route path="createaccount" element={<CreateSchool />} />
+        <Route path="" />
       </Routes>
     </>
   )
